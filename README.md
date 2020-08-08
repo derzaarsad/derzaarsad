@@ -18,6 +18,8 @@ In this project I used PTC Integrity (MKS at that time) and IBM DOORS for requir
 
 ### Plane Segmentation for a 3D Reconstruction System (KinKon)
 
+![plane](imgs/plane_segmentation.png)
+
 You can find more information about the 3D reconstruction system in [KinKon](https://www.imi.kit.edu/46_2540.php)
 
 [![](http://img.youtube.com/vi/v_1AAEMB2eg/0.jpg)](http://www.youtube.com/watch?v=v_1AAEMB2eg "")
