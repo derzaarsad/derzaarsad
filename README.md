@@ -1,7 +1,5 @@
 ### Hi there👋!
 
-The fact that you landed on this page means that you want to know me more a bit deeper or unintentionally clicked the false link 😄 Either way, I am so honored, and thank you for that!
-
 I am currently working as a Development Engineer at an Airbus company InFactory Solutions GmbH, in Munich, Germany. Besides my paid jobs, I am also doing programming in my free time,
 which you can find the repositories on my Github.
 
@@ -9,16 +7,14 @@ I always aim to have a potential business case for my private projects; therefor
 
 In a chronological order, the followings are my project history:
 
-### Build Automation for Parallel Shift Gearbox (PSG) Software
+### Build Automation for Gearbox Software
 
-This is my very first professional software development project. The task was to develop an application with GUI that can be used
-by PSG-SW developers to test and build their software changes locally before checking it in the build server. After finishing this task,
-I was tasked to build a regression test system for the existing build server.
+This is my very first professional project in the software development. I developed a standalone application which
+enables gearbox developers to do compilation and simulation tests using different software configurations before
+committing their changes into the server. I used .NET C# Windows Forms to develop the user interface and IronPython
+to integrate already existing python scripts used to parse the simulation results.
 
-I used .NET C# and Windows Forms to develop the GUI application and python scripts to parse the build results and for regression testing.
-The python script is integrated into the GUI application using IronPython.
-
-In this project I used PTC Integrity (I stood exactly on the transisition of MKS to PTC) and IBM DOORS for requirement management.
+In this project I used PTC Integrity (MKS at that time) and IBM DOORS for requirement management.
 
 ### Plane Segmentation for a 3D Reconstruction System (KinKon)
 
