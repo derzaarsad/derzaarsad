@@ -9,14 +9,14 @@ In a chronological order, the followings are my project history:
 
 ### Build Automation for Gearbox Software
 
-This is my very first professional project in the software development. I developed a standalone application which
-enables gearbox developers to do compilation and simulation tests using different software configurations before
-committing their changes into the server. This application eliminated the queue time for tests almost completely
-and increased the software development productivity by about 90%.
+This is my very first professional project in software development. I developed a standalone application that enables
+gearbox developers to do compilation and simulation tests using different software configurations before committing
+their changes into the server. This application eliminated the queue time for tests almost entirely and increased
+software development productivity by about 90%.
 
 I used .NET C# Windows Forms to develop the user interface and IronPython to integrate already existing python scripts
-used to parse the simulation results. In this project I used PTC Integrity (MKS at that time) and IBM DOORS for requirement
-management.
+used to parse the simulation results. In this project, I used PTC Integrity (MKS at that time) and IBM DOORS for
+requirement management.
 
 ### Plane Segmentation for a 3D Reconstruction System (KinKon)
 
