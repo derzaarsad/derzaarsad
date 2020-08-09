@@ -15,8 +15,8 @@ their changes into the server. This application eliminated the queue time for te
 software development productivity by about 90%.
 
 I used .NET C# Windows Forms to develop the user interface and IronPython to integrate already existing python scripts
-used to parse the simulation results. In this project, I used PTC Integrity (MKS at that time) and IBM DOORS for
-requirement management.
+used to parse the simulation results. In this project, I used PTC Integrity (MKS at that time) for software lifecycle
+management and IBM DOORS for requirement management.
 
 ### Plane Segmentation for a 3D Reconstruction System (KinKon)
 
