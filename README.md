@@ -11,10 +11,12 @@ In a chronological order, the followings are my project history:
 
 This is my very first professional project in the software development. I developed a standalone application which
 enables gearbox developers to do compilation and simulation tests using different software configurations before
-committing their changes into the server. I used .NET C# Windows Forms to develop the user interface and IronPython
-to integrate already existing python scripts used to parse the simulation results.
+committing their changes into the server. This application eliminated the queue time for tests almost completely
+and increased the software development productivity by about 90%.
 
-In this project I used PTC Integrity (MKS at that time) and IBM DOORS for requirement management.
+I used .NET C# Windows Forms to develop the user interface and IronPython to integrate already existing python scripts
+used to parse the simulation results. In this project I used PTC Integrity (MKS at that time) and IBM DOORS for requirement
+management.
 
 ### Plane Segmentation for a 3D Reconstruction System (KinKon)
 
