@@ -20,7 +20,7 @@ management.
 
 ### Plane Segmentation for a 3D Reconstruction System (KinKon)
 
-![plane](imgs/plane_segmentation.png)
+![plane](https://github.com/derzaarsad/derzaarsad/blob/master/imgs/plane_segmentation.png)
 
 You can find more information about the 3D reconstruction system in [KinKon](https://www.imi.kit.edu/46_2540.php)
 
