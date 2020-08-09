@@ -20,6 +20,11 @@ management and IBM DOORS for requirement management.
 
 ### Plane Segmentation for a 3D Reconstruction System (KinKon)
 
+This thesis became my first encounter with computer vision subjects as well as professional development in C++. The
+project is a part of a 3D reconstruction system that used Kinect depth images as an input. I designed a module to
+segment planes from a point cloud in real-time. Belong to the segmented planes are, for example, walls, floors, or
+ceilings.
+
 ![plane](https://github.com/derzaarsad/derzaarsad/blob/master/imgs/plane_segmentation.png)
 
 You can find more information about the 3D reconstruction system in [KinKon](https://www.imi.kit.edu/46_2540.php)
