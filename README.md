@@ -33,21 +33,26 @@ without any plane segmentation, click the image below:
 
 [![](http://img.youtube.com/vi/v_1AAEMB2eg/0.jpg)](http://www.youtube.com/watch?v=v_1AAEMB2eg "")
 
-### Sensor Fusion based Online Calibration
+### Benchmark for Online Calibration
 
 Starting my full-time professional work, I worked on online calibration, which determines the orientation of a video
-camera mounted on a vehicle relative to the vehicle coordinate system. My task was to design a ground truth benchmark to
-measure the accuracy of the online calibration. Knowing the properties of coordinate system transformation, I came up
-with an idea to draw a basic shape in the real world in such a way that it neglects the influence of translation and
-capture the image using the calibrated camera. The image is then used as ground truth to compare with a virtual shape
-that I projected into the image coordinate system. I used an edge detection algorithm to detect the reference shape in
-the ground truth image to ensure that the measurement accuracy depends only on the camera resolution.
+camera mounted on a vehicle relative to the vehicle coordinate system. My task was to design a benchmark to measure the
+accuracy of the online calibration. Knowing the properties of coordinate system transformation, I came up with an idea
+to draw a basic shape in the real world in such a way that it neglects the influence of translation and capture it as an
+image using the calibrated camera. The image is then used as ground truth to compare with a virtual shape that I
+projected into the image coordinate system. I used an edge detection algorithm to detect the reference shape in the
+ground truth image to ensure that the measurement accuracy depends only on the camera resolution.
 
 One of the applications of the online calibration was for ESG Virizon:
 
 [![](http://img.youtube.com/vi/LgBXKWYRGc0/0.jpg)](https://www.youtube.com/watch?v=LgBXKWYRGc0 "")
 
+### Sensor Fusion-based Multi-Sensor Calibration
+
 ### Head-Up-Display Test Automation with UR10 Robot
+
+I successfully implemented a module that enables a UR10 Robot to position the camera with a very high absolute accuracy
+that it can point the optical axis of the camera into any arbitrary position in the calibration plate.
 
 ### Autonomous Vehicle Software
 
