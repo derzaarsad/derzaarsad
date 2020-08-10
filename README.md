@@ -27,7 +27,7 @@ ceilings.
 
 ![plane](https://github.com/derzaarsad/derzaarsad/blob/master/imgs/plane_segmentation.png)
 
-You can find more information about the 3D reconstruction system in [KinKon](https://www.imi.kit.edu/46_2540.php)
+Click the image below to find more information about the 3D reconstruction system [KinKon](https://www.imi.kit.edu/46_2540.php)
 
 [![](http://img.youtube.com/vi/v_1AAEMB2eg/0.jpg)](http://www.youtube.com/watch?v=v_1AAEMB2eg "")
 
