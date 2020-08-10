@@ -18,16 +18,18 @@ I used .NET C# Windows Forms to develop the user interface and IronPython to int
 used to parse the simulation results. In this project, I used PTC Integrity (MKS at that time) for software lifecycle
 management and IBM DOORS for requirement management.
 
-### Plane Segmentation for a 3D Reconstruction System (KinKon)
+### Plane Segmentation for a 3D Reconstruction System ([KinKon](https://www.imi.kit.edu/46_2540.php))
 
 This thesis became my first encounter with computer vision subjects as well as professional development in C++. The
 project is a part of a 3D reconstruction system that used Kinect depth images as an input. I designed a module to
 segment planes from a point cloud in real-time. Belong to the segmented planes are, for example, walls, floors, or
-ceilings.
+ceilings. The following is a result example of my thesis:
 
 ![plane](https://github.com/derzaarsad/derzaarsad/blob/master/imgs/plane_segmentation.png)
 
-Click the image below to find more information about the 3D reconstruction system [KinKon](https://www.imi.kit.edu/46_2540.php)
+While doing a live 3D reconstruction, the plane segmentation algorithm was executed in every single frame. All detected
+planes that belonged to the same object were merged into a single representation. To see a live 3D reconstruction
+without any plane segmentation, click the image below:
 
 [![](http://img.youtube.com/vi/v_1AAEMB2eg/0.jpg)](http://www.youtube.com/watch?v=v_1AAEMB2eg "")
 
