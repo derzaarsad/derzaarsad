@@ -51,8 +51,9 @@ One of the applications of the online calibration was for ESG Virizon:
 
 ### Head-Up-Display Test Automation with UR10 Robot
 
-I successfully implemented a module that enables a UR10 Robot to position the camera with a very high absolute accuracy
-that it can point the optical axis of the camera into any arbitrary position in the calibration plate.
+I effectively identified the source of the problem by testing the system using synthetic data that I generated.
+In the end, I successfully implemented a module that enables a UR10 Robot to position the camera with a very high
+absolute accuracy that it can point the optical axis of the camera into any arbitrary position in the calibration plate.
 
 ### Autonomous Vehicle Software
 
