@@ -7,7 +7,7 @@ I always aim to have a potential business case for my private projects; therefor
 
 In a chronological order, the followings are my project history:
 
-### Build Automation for Gearbox Software
+### Build Automation for Gearbox Softwares
 
 This is my very first professional project in software development. I developed a standalone application that enables
 gearbox developers to do compilation and simulation tests using different software configurations before committing
@@ -35,9 +35,17 @@ without any plane segmentation, click the image below:
 
 ### Sensor Fusion based Online Calibration
 
-The online calibration is used as the based of ESG Situational Awareness System - TaKaMoS
+Starting my full-time professional work, I worked on online calibration, which determines the orientation of a video
+camera mounted on a vehicle relative to the vehicle coordinate system. My task was to design a ground truth benchmark to
+measure the accuracy of the online calibration. Knowing the properties of coordinate system transformation, I came up
+with an idea to draw a basic shape in the real world in such a way that it neglects the influence of translation and
+capture the image using the calibrated camera. The image is then used as ground truth to compare with a virtual shape
+that I projected into the image coordinate system. I used an edge detection algorithm to detect the reference shape in
+the ground truth image to ensure that the measurement accuracy depends only on the camera resolution.
 
-[![](http://img.youtube.com/vi/Iz8Cu4pwjbM/0.jpg)](http://www.youtube.com/watch?v=Iz8Cu4pwjbM "")
+One of the applications of the online calibration was for ESG Virizon:
+
+[![](http://img.youtube.com/vi/LgBXKWYRGc0/0.jpg)](https://www.youtube.com/watch?v=LgBXKWYRGc0 "")
 
 ### Head-Up-Display Test Automation with UR10 Robot
 
