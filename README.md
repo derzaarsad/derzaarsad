@@ -49,11 +49,28 @@ One of the applications of the online calibration was for ESG Virizon:
 
 ### Sensor Fusion-based Multi-Sensor Calibration
 
+Multi-Sensor Calibration combined the input of multiple sensors such as camera and LIDAR with vehicle odometry to
+determine not only the orientation but also the translation of the sensors relative to the vehicle coordinate system.
+I worked on the synchronization and also the filtering of the data in the software pipeline (C++) which greatly
+improved the accuracy of the calibration.
+Moreover, I identified the properties of the optimization algorithm used in
+this application and propose some improvements to further improve the calibration accuracy.
+
+The following is the visualization of the SLAM result from a single camera:
+
+![sfm](https://www.all-electronics.de/wp-content/uploads/2017/05/Bild-3-Kameraposition-1024x768.png)
+
 ### Head-Up-Display Test Automation with UR10 Robot
 
-I effectively identified the source of the problem by testing the system using synthetic data that I generated.
-In the end, I successfully implemented a module that enables a UR10 Robot to position the camera with a very high
-absolute accuracy that it can point the optical axis of the camera into any arbitrary position in the calibration plate.
+This was one of the projects that gave me chills when I saw the result.
+I developed an automated system to check the optical quality of a head-up-display. When I joined the project, the robot
+could not orient itself in the room, which leads to an inaccurate measurement of the head-up-display. Later on, I
+effectively identified the source of the problem by testing the system using synthetic data that I generated. In the
+end, I implemented a module that enables a UR10 Robot to position the camera with a very high absolute accuracy that it
+can point the optical axis of the camera into any arbitrary position in the calibration plate. I refactored the C# code
+in this project almost completely to improve the robustness in the technical sense and also user interface (such as by
+forcing the unit conventions). I refactored the C# code in this project to improve the robustness and
+also to avoid the user's mistake (such as by forcing the unit conventions).
 
 ### Autonomous Vehicle Software
 
