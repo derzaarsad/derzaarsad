@@ -89,6 +89,3 @@ Udacity's feedback also included data from Carla's sensors which are shown in th
 ![bag](https://github.com/wlsmith42/CarND-Capstone/blob/master/imgs/rosbag.gif)
 
 You can find the repository in [here](https://github.com/wlsmith42/CarND-Capstone)
-
-### Automated Fiber Placement Monitoring System
-[![](http://img.youtube.com/vi/-S3dx8uJ-iA/0.jpg)](http://www.youtube.com/watch?v=-S3dx8uJ-iA "")
