@@ -43,22 +43,22 @@ image using the calibrated camera. The image is then used as ground truth to com
 projected into the image coordinate system. I used an edge detection algorithm to detect the reference shape in the
 ground truth image to ensure that the measurement accuracy depends only on the camera resolution.
 
-One of the applications of the online calibration was for ESG Virizon:
+The following is the visualization of the SLAM technology used by the online calibration:
 
-[![](http://img.youtube.com/vi/LgBXKWYRGc0/0.jpg)](https://www.youtube.com/watch?v=LgBXKWYRGc0 "")
+![sfm](https://www.all-electronics.de/wp-content/uploads/2017/05/Bild-3-Kameraposition-1024x768.png)
 
 ### Sensor Fusion-based Multi-Sensor Calibration
 
 Multi-Sensor Calibration combined the input of multiple sensors such as camera and LIDAR with vehicle odometry to
 determine not only the orientation but also the translation of the sensors relative to the vehicle coordinate system.
-I worked on the synchronization and also the filtering of the data in the software pipeline (C++) which greatly
-improved the accuracy of the calibration.
-Moreover, I identified the properties of the optimization algorithm used in
-this application and propose some improvements to further improve the calibration accuracy.
+I implemented a strategy to filter unique data to avoid overfitting the optimization algorithm used by this application.
+I also worked on the data synchronization and buffering mechanism in the software pipeline using C++ which significantly
+improved the accuracy of the calibration. Lastly, as I realized that not all vehicle odometry gave 3D axis information,
+so I designed a concept that enables the algorithm to replace the relative reference to another sensor than the car.
 
-The following is the visualization of the SLAM result from a single camera:
+One of this application was for ESG Takamos:
 
-![sfm](https://www.all-electronics.de/wp-content/uploads/2017/05/Bild-3-Kameraposition-1024x768.png)
+[![](http://img.youtube.com/vi/XrmnZIWq46I/0.jpg)](https://www.youtube.com/watch?v=XrmnZIWq46I "")
 
 ### Head-Up-Display Test Automation with UR10 Robot
 
@@ -67,14 +67,24 @@ I developed an automated system to check the optical quality of a head-up-displa
 could not orient itself in the room, which leads to an inaccurate measurement of the head-up-display. Later on, I
 effectively identified the source of the problem by testing the system using synthetic data that I generated. In the
 end, I implemented a module that enables a UR10 Robot to position the camera with a very high absolute accuracy that it
-can point the optical axis of the camera into any arbitrary position in the calibration plate. I refactored the C# code
-in this project almost completely to improve the robustness in the technical sense and also user interface (such as by
-forcing the unit conventions). I refactored the C# code in this project to improve the robustness and
-also to avoid the user's mistake (such as by forcing the unit conventions).
+can point the optical axis of the camera into any arbitrary position in the calibration plate.
 
 ### Autonomous Vehicle Software
 
+This is a final team project from the Udacity online course, where we have to develop autonomous vehicle software using
+the Robot Operating System (ROS). Here I developed a module to identify a traffic light using a combination of image
+processing and deep learning. I developed a strategy where I trained a traffic light dataset only for detecting the
+traffic light and classify the light color using a simple image processing algorithm. Having this strategy, I
+successfully avoided overfitting caused by an unbalanced training data distribution, if I were to train the data using
+red, yellow, green category. Moreover, pure image processing gave a more deterministic behavior of the algorithm.
+
+After submitting the project, Udacity tested our code on their self-driving car, Carla. Our software successfully
+navigates the vehicle around the test track, stopping at the red light and smoothly steering through a curve. The GIF
+below shows an in-car view of our code autonomously driving Carla:
+
 ![carla](https://github.com/wlsmith42/CarND-Capstone/blob/master/imgs/carla.gif)
+
+Udacity's feedback also included data from Carla's sensors which are shown in the GIF below:
 
 ![bag](https://github.com/wlsmith42/CarND-Capstone/blob/master/imgs/rosbag.gif)
 
